@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #34495e;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+}
+
+/* Базові стилі для боксів */
+.box {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #2980b9;
+}
+
+/* Приклад 1: Різні значення margin */
+.example-1 {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px dashed #ccc;
+}
+
+.margin-all {
+    margin: 20px;
+    background-color: #e74c3c;
+}
+
+.margin-vertical-horizontal {
+    margin: 10px 30px;
+    background-color: #2ecc71;
+}
+
+.margin-individual {
+    margin: 5px 15px 25px 35px;
+    background-color: #f39c12;
+}
+
+/* Приклад 2: Margin collapse */
+.collapse-demo {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.collapse-1 {
+    margin-bottom: 30px;
+    background-color: #9b59b6;
+}
+
+.collapse-2 {
+    margin-top: 20px;
+    background-color: #1abc9c;
+}
+
+.note {
+    background-color: #fffacd;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Приклад 3: Центрування */
+.centering-demo {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px dashed #ccc;
+}
+
+.centered {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #34495e;
+}
+
+/* Приклад 4: Від'ємні значення */
+.negative-demo {
+    background-color: #fff;
+    padding: 40px;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.negative-margin {
+    margin-bottom: -20px;
+    background-color: #e67e22;
+    z-index: 2;
+    position: relative;
+}
+
+.normal-margin {
+    margin-top: 20px;
+    background-color: #95a5a6;
+}
+
+/* Приклад 5: Margin vs Padding */
+.comparison-demo {
+    background-color: #ecf0f1;
+    padding: 20px;
+}
+
+.with-margin {
+    margin: 20px;
+    background-color: #c0392b;
+}
+
+.with-padding {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #27ae60;
+}
+
+.with-both {
+    margin: 15px;
+    padding: 15px;
+    background-color: #8e44ad;
+}
+
+/* Приклад 6: Auto margin */
+.auto-demo {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px dashed #dee2e6;
+}
+
+.auto-left {
+    width: 200px;
+    margin-right: auto;
+    margin-bottom: 15px;
+    background-color: #fd7e14;
+}
+
+.auto-right {
+    width: 200px;
+    margin-left: auto;
+    margin-bottom: 15px;
+    background-color: #20c997;
+}
+
+.auto-center {
+    width: 250px;
+    margin: 0 auto 15px auto;
+    background-color: #6f42c1;
+}
+
+/* Додаткові демонстрації */
+.margin-percentage {
+    margin: 5% 10%;
+    background-color: #17a2b8;
+}
+
+.margin-em {
+    font-size: 18px;
+    margin: 1em 2em;
+    background-color: #dc3545;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .auto-left,
+    .auto-right,
+    .auto-center {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .margin-individual {
+        margin: 10px;
+    }
+}
+
+/* Візуальні підказки */
+.box::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 1px dashed rgba(255,255,255,0.5);
+    pointer-events: none;
+}
+
+/* Hover effects */
+.box:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Робота з відступами (margin)</title>
+    <link rel="stylesheet" href="Ex5margins.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Вивчення Margin та Padding</h1>
+        
+        <h2>Приклад 1: Різні значення margin</h2>
+        <div class="example-1">
+            <div class="box margin-all">margin: 20px;</div>
+            <div class="box margin-vertical-horizontal">margin: 10px 30px;</div>
+            <div class="box margin-individual">margin: 5px 15px 25px 35px;</div>
+        </div>
+        
+        <h2>Приклад 2: Margin collapse (схлопування відступів)</h2>
+        <div class="collapse-demo">
+            <div class="box collapse-1">Перший блок (margin-bottom: 30px)</div>
+            <div class="box collapse-2">Другий блок (margin-top: 20px)</div>
+            <p class="note">Відступ між блоками буде 30px, а не 50px!</p>
+        </div>
+        
+        <h2>Приклад 3: Центрування блоків</h2>
+        <div class="centering-demo">
+            <div class="box centered">Центрований блок</div>
+        </div>
+        
+        <h2>Приклад 4: Від'ємні значення margin</h2>
+        <div class="negative-demo">
+            <div class="box negative-margin">Блок з від'ємним margin</div>
+            <div class="box normal-margin">Звичайний блок</div>
+        </div>
+        
+        <h2>Приклад 5: Порівняння margin та padding</h2>
+        <div class="comparison-demo">
+            <div class="box with-margin">Тільки margin</div>
+            <div class="box with-padding">Тільки padding</div>
+            <div class="box with-both">Margin + Padding</div>
+        </div>
+        
+        <h2>Приклад 6: Auto margin для вирівнювання</h2>
+        <div class="auto-demo">
+            <div class="box auto-left">margin-right: auto</div>
+            <div class="box auto-right">margin-left: auto</div>
+            <div class="box auto-center">margin: 0 auto</div>
+        </div>
+    </div>
+</body>
+</html>
